@@ -3,9 +3,9 @@
     "apps": [],
     "details": [
       {
-        "appID": "6R987Q4TZ5.com.diveroid.diveroid3.0",
+        "appID": "DGTZ9CPSVT.com.beeasy.shopee.vn",
         "paths": [
-          "/verifyemail*"
+          "/*"
         ]
       }
     ]
