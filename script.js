@@ -50,7 +50,7 @@ if (contactForm) {
         }
         
         // Display success message
-        showNotification(`Thank you, ${escapeHtml(name)}! Your message has been received. We'll get back to you at ${escapeHtml(email)} soon.`, 'success');
+        showNotification(`Thank you, ${escapeHtml(name)}! Your message has been received. We'll get back to you soon.`, 'success');
         
         // Reset form
         contactForm.reset();
@@ -70,7 +70,7 @@ function showNotification(message, type = 'success') {
     const notification = document.createElement('div');
     notification.className = `notification notification-${type}`;
     notification.setAttribute('role', 'alert');
-    notification.setAttribute('aria-live', 'polite');
+    notification.setAttribute('aria-live', type === 'error' ? 'assertive' : 'polite');
     notification.textContent = message;
     
     // Add to page
