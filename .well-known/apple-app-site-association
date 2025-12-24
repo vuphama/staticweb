@@ -1,13 +1,33 @@
 {
-  "applinks": {
-    "apps": [],
-    "details": [
-      {
-        "appID": "DGTZ9CPSVT.com.beeasy.shopee.vn",
-        "paths": [
-          "/*"
-        ]
-      }
-    ]
+  "applinks":{
+     "apps":[
+        
+     ],
+     "details":[
+        {
+           "appID":"DGTZ9CPSVT.com.beeasy.shopee.vn",
+           "paths":[
+              "NOT */login/*",
+              "NOT *forgot_password*",
+              "NOT /buyer/w/*",
+              "NOT */verify/ivs/*",
+              "NOT /s/browser/*",
+              "*",
+              "/"
+           ]
+        },
+        {
+           "appID":"TT2N7PPCM7.com.beeasy.shopee.vn.enterprise",
+           "paths":[
+              "NOT */login/*",
+              "NOT *forgot_password*",
+              "NOT /buyer/w/*",
+              "NOT */verify/ivs/*",
+              "NOT /s/browser/*",
+              "*",
+              "/"
+           ]
+        }
+     ]
   }
 }
