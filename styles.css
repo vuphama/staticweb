@@ -202,6 +202,34 @@ footer {
     padding: 2rem 0;
 }
 
+/* Notification */
+.notification {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    transform: translateX(120%);
+    transition: transform 0.3s ease;
+    z-index: 2000;
+    border-left: 4px solid #667eea;
+}
+
+.notification.show {
+    transform: translateX(0);
+}
+
+.notification-success {
+    border-left-color: #10b981;
+}
+
+.notification-error {
+    border-left-color: #ef4444;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     nav .container {
