@@ -1,0 +1,10 @@
+# Cloudflare Pages Headers Configuration
+# This file sets custom headers for specific paths
+
+/.well-known/apple-app-site-association
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: no-cache, no-store, must-revalidate
+  Pragma: no-cache
+  Expires: 0
+  Access-Control-Allow-Origin: *
+
